@@ -7,4 +7,5 @@ RUN apt-get update && apt-get install -y xvfb ffmpeg && \
     pip install 'pyglet==1.3.2' && \
     pip install pyvirtualdisplay && \
     pip install tf-agents
+RUN pip uninstall tensorflow && pip install tensorflow
 USER jovyan
