@@ -1,6 +1,6 @@
 FROM quay.io/kubeflow/tf-notebook-image:v0.7.0
 USER root
-RUN apt-get install -y xvfb ffmpeg && \
+RUN apt-get update && apt-get install -y xvfb ffmpeg && \
     pip install 'gym==0.10.11' && \
     pip install 'imageio==2.4.0' && \
     pip install PILLOW && \
